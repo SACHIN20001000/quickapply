@@ -185,46 +185,100 @@
               </div>
             </div>
 
-            <div class="mb-4 main-content-label">Contact Info</div>
+            <div class="mb-4 main-content-label">Salary Info</div>
+
             <div class="form-group ">
               <div class="row">
                 <div class="col-md-3">
-                  <label class="form-label">Email<i>(required)</i></label>
+                  <label class="form-label">Current Salary</label>
                 </div>
                 <div class="col-md-9">
-                  <input type="text" class="form-control" readonly name="email" value="{{Auth::user()->email}}">
+                  <input type="text" class="form-control" name="current_salary" placeholder="Current Salary" value="{{Auth::user()->current_salary}}">
                 </div>
               </div>
             </div>
             <div class="form-group ">
               <div class="row">
                 <div class="col-md-3">
-                  <label class="form-label">Password</label>
+                  <label class="form-label">Expected Salary</label>
                 </div>
                 <div class="col-md-9">
-                  <input type="password" class="form-control" name="password" placeholder="Password">
+                  <input type="text" class="form-control" name="expected_salary" placeholder="Expected Salary" value="{{Auth::user()->expected_salary}}">
                 </div>
               </div>
             </div>
             <div class="form-group ">
               <div class="row">
                 <div class="col-md-3">
-                  <label class="form-label">Confirm Password</label>
+                  <label class="form-label">Work Knowledge</label>
                 </div>
                 <div class="col-md-9">
-                  <input type="password" class="form-control" name="confirm_password" placeholder="Password">
+                  <input type="text" class="form-control" name="work_knowledge" placeholder="Work Knowledge" value="{{Auth::user()->work_knowledge}}">
                 </div>
               </div>
             </div>
+            <div class="form-group ">
+              <div class="row">
+                <div class="col-md-3">
+                  <label class="form-label">Country</label>
+                </div>
+                <div class="col-md-9">
+                  <input type="text" class="form-control" name="country" placeholder="Country" value="{{Auth::user()->country}}">
+                </div>
+              </div>
+            </div>
+            <div class="form-group ">
+              <div class="row">
+                <div class="col-md-3">
+                  <label class="form-label">Notice Period</label>
+                </div>
+                <div class="col-md-9">
+                  <input type="text" class="form-control" name="notice_period" placeholder="Notice Period" value="{{Auth::user()->notice_period}}">
+                </div>
+              </div>
+            </div>
+
+        </div>
+        <div class="mb-4 main-content-label">Contact Info</div>
+        <div class="form-group ">
+          <div class="row">
+            <div class="col-md-3">
+              <label class="form-label">Email<i>(required)</i></label>
+            </div>
+            <div class="col-md-9">
+              <input type="text" class="form-control" readonly name="email" value="{{Auth::user()->email}}">
+            </div>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="row">
+            <div class="col-md-3">
+              <label class="form-label">Password</label>
+            </div>
+            <div class="col-md-9">
+              <input type="password" class="form-control" name="password" placeholder="Password">
+            </div>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="row">
+            <div class="col-md-3">
+              <label class="form-label">Confirm Password</label>
+            </div>
+            <div class="col-md-9">
+              <input type="password" class="form-control" name="confirm_password" placeholder="Password">
+            </div>
+          </div>
         </div>
       </div>
-      <div class="card-footer">
-        <button type="submit" class="btn btn-primary waves-effect waves-light">Update Profile</button>
-      </div>
-      </form>
     </div>
-
+    <div class="card-footer">
+      <button type="submit" class="btn btn-primary waves-effect waves-light">Update Profile</button>
+    </div>
+    </form>
   </div>
+
+</div>
 </div>
 <!-- /Col -->
 </div>

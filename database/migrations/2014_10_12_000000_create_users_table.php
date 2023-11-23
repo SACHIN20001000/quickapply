@@ -30,17 +30,13 @@ class CreateUsersTable extends Migration
             $table->text('github_url')->nullable();
             $table->text('linkdin_url')->nullable();
             $table->text('ziprecuriter_url')->nullable();
-            
-            $table->string('account_no')->nullable();
-            $table->string('bank_name')->nullable();
-            $table->string('account_name')->nullable();
-            $table->string('ifsc')->nullable();
             $table->string('upi')->nullable();
             $table->string('photo')->nullable();
-            $table->string('pan_card')->nullable();
-            $table->string('aadhar_card')->nullable();
-            $table->string('gst')->nullable();
-            $table->string('advance_payout')->nullable();
+            $table->string('current_salary')->nullable();
+            $table->string('expected_salary')->nullable();
+            $table->string('work_knowledge')->nullable();
+            $table->string('country')->nullable();
+            $table->string('notice_period')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
