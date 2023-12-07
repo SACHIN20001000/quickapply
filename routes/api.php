@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\PassportAuthController;
 use App\Http\Controllers\API\UserController;
+use App\Http\Controllers\API\AnswersAiController;
 use App\Http\Controllers\API\BacklinkController;
 
 use App\Http\Middleware\EnsureApiTokenIsValid;
@@ -24,6 +25,9 @@ Route::post('login', [PassportAuthController::class, 'login']);
 Route::post('oauth/token', [PassportAuthController::class, 'oauth_token']);
 Route::get('products', [ProductController::class, 'index']);
 Route::get('user/{id}', [UserController::class, 'getAllData']);
+
+Route::post('answerai' , [AnswersAiController::class ,'generateAnswers']);
+
 Route::middleware([EnsureApiTokenIsValid::class])->group(function () {
 });
 Route::get('backlink', [BacklinkController::class, 'index']);

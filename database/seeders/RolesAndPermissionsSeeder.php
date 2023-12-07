@@ -24,7 +24,6 @@ class RolesAndPermissionsSeeder extends Seeder
         $admin = Role::updateOrCreate(['name' => 'Admin']);
         $superAdmin = Role::updateOrCreate(['name' => 'Super Admin']);
         $client = Role::updateOrCreate(['name' => 'Client']);
-
         $userStaff = User::updateOrCreate(
                         [
                             'name' => 'Staff',
