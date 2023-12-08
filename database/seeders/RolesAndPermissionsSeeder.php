@@ -9,7 +9,7 @@ use App\Models\User;
 
 class RolesAndPermissionsSeeder extends Seeder
 {
-
+    
     /**
      * Run the database seeds.
      *
